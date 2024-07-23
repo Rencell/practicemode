@@ -14,9 +14,9 @@ namespace practicemode
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string connectionString = "Server=.\\SQLEXPRESS;Database=mynigga;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;";
+            //string connectionString = "Server=.\\SQLEXPRESS;Database=mynigga;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;";
 
-
+            string connectionString = "Data Source=(LocalDb)\\MSSQLLocalDB;Initial Catalog=mynigga;Integrated Security=True";
 
             SqlConnection con = new SqlConnection(connectionString);
 
