@@ -31,6 +31,7 @@
             textBox1 = new TextBox();
             label1 = new Label();
             listPanel = new FlowLayoutPanel();
+            label2 = new Label();
             SuspendLayout();
             // 
             // textBox1
@@ -57,11 +58,22 @@
             listPanel.Size = new Size(506, 222);
             listPanel.TabIndex = 2;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(229, 99);
+            label2.Name = "label2";
+            label2.Size = new Size(110, 15);
+            label2.TabIndex = 3;
+            label2.Text = "TEST CONNECTION";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(label2);
             Controls.Add(listPanel);
             Controls.Add(label1);
             Controls.Add(textBox1);
@@ -77,5 +89,6 @@
         private TextBox textBox1;
         private Label label1;
         private FlowLayoutPanel listPanel;
+        private Label label2;
     }
 }
