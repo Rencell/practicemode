@@ -30,6 +30,7 @@
         {
             textBox1 = new TextBox();
             label1 = new Label();
+            listPanel = new FlowLayoutPanel();
             SuspendLayout();
             // 
             // textBox1
@@ -48,11 +49,20 @@
             label1.TabIndex = 1;
             label1.Text = "try";
             // 
+            // listPanel
+            // 
+            listPanel.AutoScroll = true;
+            listPanel.Location = new Point(123, 192);
+            listPanel.Name = "listPanel";
+            listPanel.Size = new Size(506, 222);
+            listPanel.TabIndex = 2;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(listPanel);
             Controls.Add(label1);
             Controls.Add(textBox1);
             Name = "Form1";
@@ -66,5 +76,6 @@
 
         private TextBox textBox1;
         private Label label1;
+        private FlowLayoutPanel listPanel;
     }
 }
